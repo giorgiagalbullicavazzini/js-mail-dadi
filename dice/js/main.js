@@ -6,15 +6,15 @@ play.addEventListener('click',
   function() {
     const playerDice = Math.floor(Math.random() * 6) + 1;
     const cpuDice = Math.floor(Math.random() * 6) + 1;
-    
+
     // IF the user number is greater than the computer one, the user wins
     // ELSE IF the computer numbers is greater than the user one, the computer wins
     // ELSE the numbers are equal and the result is a tie
     if (playerDice > cpuDice) {
-      console.log(playerDice, cpuDice, 'Hai vinto');
+      alert(`Hai totalizzato ${playerDice} e il computer ha totalizzato ${cpuDice}. Hai vinto!`);
     } else if (cpuDice > playerDice) {
-      console.log(playerDice, cpuDice, 'Hai perso');
+      alert(`Hai totalizzato ${playerDice} e il computer ha totalizzato ${cpuDice}. Hai perso :(`);
     } else {
-      console.log(playerDice, cpuDice, 'Pareggio');
+      alert(`Hai totalizzato ${playerDice} e il computer ha totalizzato ${cpuDice}. Pareggio... Riprova!`);
     }
 });
