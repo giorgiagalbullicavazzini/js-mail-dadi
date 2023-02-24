@@ -1,3 +1,5 @@
+'use strict';
+
 // The purpose of the code is to check if a given email is part of a specific list
 // The user can submit their email using an `input type email`
 const login = document.getElementById('login');
