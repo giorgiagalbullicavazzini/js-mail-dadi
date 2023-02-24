@@ -8,14 +8,19 @@ const list = ['abc@gmail.com', 'def@gmail.com', 'ghi@gmail.com', 'jkl@gmail.com'
 login.addEventListener('click',
   function () {
     const email = document.getElementById('email').value;
+    let permission = false;
 
     // IF the user email is inside the list, the code produces a successful output
     // ELSE the code produces an error output
     for (let i = 0; i < list.length; i++) {
       if (list[i] === email) {
-        console.log('Puoi accedere');
-      } else {
-        console.log('Riprova');
+        permission = true;
       };
+    }
+
+    if (permission === true) {
+      alert('Login in corso');
+    } else {
+      alert('Non hai il permesso di accedere');
     }
   });
